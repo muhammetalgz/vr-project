@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <img src="/image/Rectangle 1.jpg" alt="">
+    <div class="form">
+        <h1 class="d-flex p-2 justify-content-center align-items-center text-primary">Get Login</h1>
+        <label for="lname">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="correct e-mail: kullanıcı@gmail.com" value="kullanıcı@gmail.com">
+        <label class="col-md-4 control-label">Password</label>
+        <div class="password">
+            <input type="password" name="password" placeholder="correct password: kullanıcı5" id="password" value="kullanıcı5">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        </div>
+        <button type="submit" class="d-flex align-items-center justify-content-center p-2 mx-auto mt-3" id="loginButton">Login</button>
+        <div class="register">
+            <div class="bleft"></div>
+            <p>Sign in with or</p>
+            <div class="bright"></div>
+        </div>
+        <div class="social-media">
+            <a href=""><img src="./image/Group 5.png" alt=""></a>
+            <a href=""><img src="./image/Group 6.png" alt=""></a>
+            <a href=""><img src="./image/Group 7.png" alt=""></a>
+        </div>
+        <p class=" sign-in d-flex align-items-center justify-content-center">Don't you have an account <a href="signin.html">Sign in</a></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#rotate {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 10;
+}
+
+#rotate:hover {
+    color: rgba(238, 238, 238, 0.76);
+    transition: .3s;
+}
+
+.menu {
+    transition: 0.5s;
+    transform: translateX(-300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    transition: 0.5s;
+    transform: translateX(0);
+    width: 300px;
+    background: black;
+    opacity: 0.8;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu ul {
+    transition: .5s;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: relative;
+    color: none;
+}
+
+.menu li:hover {
+    background: rgb(43, 42, 42);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.menu li a {
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu li i {
+    font-size: 15px;
+    position: absolute;
+    right: 30px;
+    top: 17px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.remove {
+    transition: .5s;
+}
+
+.exit {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.exit i {
+    transform: translateX(180deg);
+}
+section{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
+.vr-box{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    transition: .4s;
+    flex-direction: column;
+}
+.vr-box:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+section img{
+    width: 100%;
+    border-radius: 10px;
+    height: 240px;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+.vr-box p{
+    color: #000000;
+    font-size: 13px;
+}
+.vr-box span{
+    color: #000000;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background: rgb(56, 55, 55);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.pages li{
+    margin-top: 15px;
+}
+footer div{
+     height: 160px;
+}
+footer h5{
+    color: #eee;
+}
+footer a{
+    color: #fff;
+    transition: .3s;
+}
+footer a:hover{
+    transition: .3s;
+}
+.social-media .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    gap: 20px;
+    font-size: 24px;
+    transition: .3s;
+}
+.social-media i:hover{
+    transition: .3s;
+}
+.basket{
+    position: fixed;
+    right: 130px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    background: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.basket p{
+    margin-top: 15px;
+}
+#myBtn{
+    position: fixed;
+    right: 140px; 
+    color: #fff;
+    top: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+#myBtn:hover{
+    color: gray;
+    transition: .3s;
+}
+.purchasing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.purchasing button{
+    width: 50%;
+    border: none;
+    height: 45px;
+    margin-top: 20px;
+    color: #fff;
+    background: red;
+    padding: 2px;
+}
+.purchasing button:nth-child(1){
+    background: rgb(67, 184, 67);
+    border-radius: 0px 0px 0px 10px;
+    transition: .3s;
+}
+.purchasing button:nth-child(1):hover{
+    background: rgb(33, 90, 33);
+    transition: .3s;
+}
+.purchasing button:nth-child(2){
+    background: red;
+    border-radius: 0px 0px 10px 0px;
+    transition: .3s;
+}
+.purchasing button:nth-child(2):hover{
+    background: rgb(133, 0, 0);
+    transition: .3s;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 15% auto; 
+    padding: 20px;
+    color: #fff;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+
+  .close {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(34, 34, 34);
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalText{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .container{
+    width: 100%;
+    height: 700px;
+  }
+  .modalText .image{
+    width: 300px;
+    border-radius: 20px;
+  }
+.total{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(26, 26, 26);
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 8px 0;
+    gap: 10px;
+}
+.total p{
+    margin: 0;
+}
+@media only screen and (max-width: 375px){
+    #myBtn{
+        right: 20px;
+    }
+    .basket{
+        right: 7px;
+    }
+    .modalText{
+        height: auto;
+    }
+    .modalText{
+        font-size: 12px;
+    }
+    .modalText .image {
+        width: 250px;
+        margin-top: 40px;
+    }
+    .modalText .title {
+        font-size: 13px;
+    }
+    .modalText .price {
+        font-size: 13px;
+    }
+    .total{
+        font-size: 14px;
+        right: 10px;
+        top: 15px;
+        border-radius: 8px;
+    }
+    .close{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+    .vr-box{
+        width: auto;
+    }
+}

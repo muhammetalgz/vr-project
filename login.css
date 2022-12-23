@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/image/Frame\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 715px;
+    background: #fff;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.form h1 {
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+img {
+    border-radius: 15px 0px 0 15px;
+}
+
+.form label {
+    width: 70%;
+    margin: 0 auto;
+    color: #0B2F8A;
+}
+
+.form input {
+    width: 70%;
+    margin: 0 auto;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #0B2F8A;
+    outline: none;
+    margin-bottom: 20px;
+    color: #0B2F8A;
+}
+
+.form input::placeholder {
+    color: #0B2F8A;
+}
+
+.form button {
+    width: 200px;
+    background: #0B2F8A;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 100;
+    height: 40px;
+    box-shadow: 0px 8px 17px -7px #0B2F8A;
+}
+
+.form button:hover {
+    background: #011957;
+    transition: .3s;
+}
+
+.password {
+    display: flex;
+    position: relative;
+}
+
+#id_password {
+    padding-right: 30px;
+}
+
+.password i {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.register p {
+    margin: 0;
+    color: rgba(21, 24, 109, 0.6);
+}
+
+.register div {
+    width: 170px;
+    height: 2px;
+    background: rgba(21, 24, 109, 0.6);
+    border-radius: 30px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.form p {
+    color: rgba(21, 24, 109, 0.6);
+}
+
+p a {
+    margin-left: 10px;
+}
+
+.alert-info {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.alert-success {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.alert-warning {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+.alert-danger {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+@media only screen and (max-width: 768px){
+    body{
+        background-image: url(/image/Rectangle\ 1.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body img{
+        display: none;
+    }
+    .form{
+        width: 74%;
+        border-radius: 15px 15px 15px 15px;
+        height: 600px;
+    }
+    .form h1{
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url(/image/Rectangle\ 1.jpg);
+    }
+    body img{
+        display: none;
+    }
+    .form{
+        width: 300px;
+        border-radius: 15px 15px 15px 15px;
+        height: 450px;
+    }
+    .form h1{
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    .form input{
+        font-size: 12px;
+    }
+    .form i{
+        right: 50px;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .form button{
+        font-size: 12px;
+        width: 120px;
+        height: 30px;
+    }
+    .register{
+        gap: 5px;
+    }
+    .social-media{
+        display: none;
+    }
+    .register p {
+        width: 200px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .sign-in{
+        font-size: 12px;
+    }
+    .sign-in p{
+        font-size: 12px;
+    }
+    .alert-success {
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 15px 0 0;
+        font-size: 12px;
+    }
+    .alert-danger {
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 15px 0 0;
+        font-size: 12px;
+    }
+}

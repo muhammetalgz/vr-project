@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="vr.css">
+    <link rel="stylesheet" href="global.css">
+    <title>VR Home</title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="image/background.jpg" alt="">
+    </div>
+    <i class="fa-solid fa-bars position-fixed mx-5 mt-5" id="rotate" onclick="active()"></i>
+    <div class="menu position-fixed active" onclick="active()" id="close">
+        <div class="profile">
+            <i class="fa-solid fa-user"></i>
+            <div class="text">
+                <p id="menu-name">Jack</p>
+                <span id="menu-email">kullanıcı@gmail.com</span>
+            </div>
+        </div>
+        <ul>
+            <li><a href="vr.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Browse VR Glasses</a></li>
+            <div class="exit">
+                <li><a href="signin.html" class="text-danger">Log out<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="container-box">
+        <div class="box"><a href="shop.html"><img src="image/vr-g.jpg" alt=""></a>
+            <p><a href="vr.html">Buy VR Glasses</a></p>
+        </div>
+        <div class="box"><a href="about.html"><img src="image/vr-gozluk-nasil-kullanilir.jpeg" alt=""></a>
+            <p><a href="">What is VR</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="sayfalar">
+            <h5>Pages</h5>
+            <li class=""><a href="vr.html">Home</a></li>
+            <li class=""><a href="about.html">About</a></li>
+            <li class=""><a href="">Communication</a></li>
+        </div>
+        <div class="Contact">
+            <h5>Contact</h5>
+            <p>Muhammet Alagöz</p>
+            <p>T: 12345678900</p>
+            <p>E-mail: amralgz33@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <h5>Social Media</h5>
+            <div class="icon">
+                <a href="https://twitter.com/neoms25" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/muhammetalagoz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/muhammetalgz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            
+            
+        </div>
+    </footer>
+    <script src="vr.js"></script>
+</body>
+
+</html>
