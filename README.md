@@ -1,1 +1,1 @@
-[Proje'nin demo linki:](https://cautious-brass.surge.sh/signin.html)
+[Proje'nin Demosu](https://cautious-brass.surge.sh/signin.html)
